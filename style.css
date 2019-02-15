@@ -1,0 +1,205 @@
+@import "https://use.fontawesome.com/releases/v5.1.0/css/all.css";
+html,
+body {
+  min-width: 350px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: #616382;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #616382;
+}
+
+h1 {
+  font-size: 2.9em;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-height: 130px;
+  background-color: #E5EAA4;
+}
+@media only screen and (max-width: 590px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+nav a {
+  padding: 10px 40px;
+  height: 100%;
+  font-size: 1.5em;
+}
+nav a:hover {
+  font-weight: bold;
+}
+@media only screen and (max-width: 590px) {
+  nav a {
+    padding: 5px 10px;
+    margin: 0 auto;
+    font-size: 1.2em;
+  }
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #E5EAA4;
+}
+
+.welcome section {
+  padding-right: 40px;
+  padding-left: 20px;
+  text-align: right;
+}
+
+.welcome p {
+  float: right;
+  margin-top: 10px;
+  width: 80%;
+  color: #66245B;
+}
+
+.welcome img {
+  margin-right: 5%;
+  height: 51.6vw;
+  max-height: 361px;
+  width: 36.6vw;
+  max-width: 256px;
+  border-radius: 15px;
+  box-shadow: 2px 4px 15px 2px rgba(0, 0, 0, 0.2), -2px -2px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin: 50px 10px 20px;
+  font-weight: bold;
+}
+
+.project-tile {
+  display: inline-block;
+  margin: 40px 10%;
+  padding: 0;
+  height: 220px;
+  width: 280px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: 1px solid;
+  border-color: #69A5A4;
+  border-radius: 4px;
+  box-shadow: 2px 3px 15px 2px rgba(0, 0, 0, 0.2), -2px 0px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+.project-pic {
+  width: 100%;
+  height: 180px;
+  border-bottom: 1px solid;
+  border-color: #69A5A4;
+}
+
+.project-name {
+  line-height: 32px;
+}
+
+.show-all {
+  display: block;
+  margin: 20px auto 90px;
+  padding: 4px;
+  width: 200px;
+  height: 35px;
+  line-height: 35px;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+  background: #E5EAA4;
+  border: 2px solid #616382;
+  border-radius: 4px;
+}
+
+.show-all:hover {
+  background: #616382;
+  color: #E5EAA4;
+  box-shadow: 2px 4px 15px 2px rgba(0, 0, 0, 0.2), -2px -2px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100.1vh;
+  background: #66245B;
+  color: #E5EAA4;
+}
+
+.contact-header {
+  padding: 150px 20px 60px;
+}
+@media only screen and (max-width: 590px) {
+  .contact-header {
+    padding: 70px 20px 40px;
+  }
+}
+
+.contact-header p {
+  margin-top: 10px;
+}
+
+.contact-details {
+  margin: 40px 35px;
+  font-size: 8vw;
+  color: #E5EAA4;
+}
+.contact-details:hover {
+  color: #A8C4A2;
+}
+@media only screen and (max-width: 590px) {
+  .contact-details {
+    margin: 20px 10px;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 75%;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+@media only screen and (max-width: 590px) {
+  .links {
+    display: grid;
+    grid-gap: 70px;
+    grid-template-columns: 40% 40%;
+  }
+}
+
+footer {
+  padding: 10px 20px;
+  text-align: right;
+  line-height: 40px;
+  background: #616382;
+  color: #69A5A4;
+}
+@media only screen and (max-width: 590px) {
+  footer {
+    text-align: center;
+  }
+}
+
+footer a {
+  font-weight: bold;
+  color: #69A5A4;
+}
