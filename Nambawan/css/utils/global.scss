@@ -1,0 +1,45 @@
+html{
+	font-size: $mainFontSize;
+	
+	@media screen and (max-width: $desktopWidth) {
+		font-size: 14px;
+	}
+	@media screen and (max-width: $smDesktopWidth) {
+		font-size: 12px;
+  }
+  @media screen and (max-width: $tableWidth) {
+		font-size: 11px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+		font-size: 10px;
+	}
+	@media screen and (max-width: $smPhoneWidth) {
+		font-size: 9px;
+  }
+}
+
+body {
+	margin-left: 5.571vw;
+	font-family: "Raleway", sans-serif;
+	
+	@media screen and (max-width: $tableWidth) {
+    margin-left: 0;
+  }
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+em,
+i {
+	font-style: normal;
+	color: $primary;
+}

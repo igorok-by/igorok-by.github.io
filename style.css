@@ -78,16 +78,15 @@ nav a:hover { font-weight: bold }
   width: 36.6vw;
   max-width: 256px;
   border-radius: 15px;
-  box-shadow: 2px 4px 15px 2px rgba(0, 0, 0, .2),
-              -2px -2px 15px 2px rgba(0, 0, 0, .2);
+  box-shadow: 0 3px 20px -2px #616382;
 }
 
-h2 {
+.project-title {
   margin: 50px 10px 20px;
   font-weight: bold;
 }
 
-.project-tile {
+.project-item {
   display: inline-block;
   margin: 40px 10%;
   padding: 0;
@@ -97,8 +96,12 @@ h2 {
   border: 1px solid;
 	border-color: #69A5A4;
   border-radius: 4px;
-  box-shadow: 2px 3px 15px 2px rgba(0,0,0,.2),
-						  -2px 0px 15px 2px rgba(0,0,0,.2);
+  box-shadow: 0 5px 10px -2px #616382;
+  transition: all .2s ease-in-out;
+}
+
+.project-item:hover {
+  box-shadow: 0 10px 15px -4px #616382;
 }
 
 .project-pic { width: 98% }
@@ -122,13 +125,13 @@ h2 {
   background: #E5EAA4;
   border: 2px solid #616382;
   border-radius: 4px;
+  transition: all .2s ease-in-out;
 }
 
 .show-all:hover {
   background: #616382;
   color: #E5EAA4;
-  box-shadow: 2px 4px 15px 2px rgba(0, 0, 0, 0.2),
-              -2px -2px 15px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 9px 13px -3px #616382;
 }
 
 .contact {

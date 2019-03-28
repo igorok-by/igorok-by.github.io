@@ -1,0 +1,20 @@
+// px to rem
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+
+// Background-image positioning
+@mixin img-position($url) {
+  background: url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

@@ -1,0 +1,859 @@
+@import "utils/normalize.css";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/global";
+@import "utils/fonts";
+
+
+/* Styles of first screen
+--------------------------*/
+
+.screen {
+  width: 94.429vw;
+  height: 100vh;
+  @media screen and (max-width: $tableWidth) {
+    width: 100%;
+  }
+
+  &--first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 890px;
+    padding-left: 3.857vw;
+    padding-right: 7vw;
+    padding-top: 5.598vh;
+    background: url("../img/first-screen_mountain.png");
+    background-repeat: no-repeat;
+    background-position: -371px -86px;
+    color: $white;
+
+    @media screen and (max-width: $tableWidth) {
+      padding-left: 0;
+    }
+  }
+
+  &--first::before {
+    position: absolute;
+    top: 0;
+    left: 5.571vw;
+    display: block;
+    width: 94.429vw;
+    height: 100%;
+    max-height: 890px;
+    content: '';
+    @include img-position("../img/first-screen_overlay.png");
+
+    @media screen and (max-width: $tableWidth) {
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.first-wrap {
+  @media screen and (max-width: $tableWidth) {
+    margin-left: rem(70);
+  }
+}
+
+
+// Header
+
+.first-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.first-logo {
+  width: rem(122);
+  height: rem(54);
+
+  @include img-position("../img/header-logo.png");
+}
+
+.first-phone {
+  text-align: right;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &__numb {
+    height: rem(14);
+    margin-bottom: rem(17);
+    font-family: "Raleway - Extra Bold";
+    font-size: rem(17);
+    font-weight: 400;
+  }
+
+  &__dscr {
+    opacity: 0.7;
+    font-family: "Raleway - Semi Bold";
+    font-size: rem(11);
+    text-transform: uppercase;
+  }
+}
+
+
+// Front First screen
+
+.first-front {
+  position: relative;
+  margin-top: 15.522vh;
+  margin-bottom: 15.522vh;
+
+  @media screen and (max-width: $desktopWidth) {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  &__heading {
+    margin-bottom: 2.29vh;
+    font-family: "Raleway - Extra Bold";
+    font-size: 2.545vh;
+    letter-spacing: rem(1.65);
+  }
+
+  &__dscr {
+    margin: 0;
+    max-width: 70vw;
+    font-family: "Raleway - Extra Bold";
+    font-size: 7.1vh;
+    line-height: 8.715vh;
+
+    @media screen and (max-width: $desktopWidth) {
+      font-size: 70px;
+      line-height: 85px;
+    }
+    @media screen and (max-width: $smDesktopWidth) {
+      font-size: 60px;
+      line-height: 70px;
+    }
+    @media screen and (max-width: $tableWidth) {
+      font-size: 45px;
+      line-height: 50px;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+  
+}
+
+
+// Footer First screen
+
+.first-footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: rem(853);
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    min-height: 150px;
+  }
+}
+
+
+// Feature First screen
+.first-feature {
+  width: rem(252);
+  padding-right: rem(60);
+  padding-bottom: rem(12);
+  border-bottom-style: solid;
+  border-bottom-width: rem(3);
+  border-bottom-color: rgba(145, 145, 145, 0.49);
+  transition: all .2s ease-in-out;
+  font-family: "Raleway - Semi Bold";
+  font-size: rem(15);
+  font-weight: 400;
+  letter-spacing: 0.45px;
+  line-height: rem(18);
+
+  &:hover {
+    border-bottom-color: $primary;
+    color: $primary;
+  }
+}
+
+
+// Btn First screen
+
+.first-button {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: rem(270);
+  height: rem(63);
+
+  &--primary {
+    align-self: flex-end;
+    padding-top: rem(6);
+    padding-left: rem(38);
+    padding-right: rem(48);
+    background-color: $primary;
+    color: $white;
+  }
+
+  &__sign {
+    width: 16px;
+    height: 31px;
+
+    @include img-position("../img/btn-arrow.png");
+  }
+
+  &__sign--animate {
+    animation: top-down 1s ease-in-out infinite;
+    margin-bottom: rem(11);
+  }
+
+  @keyframes top-down {
+    0%,
+    100% { transform: translate(0, 0) }
+    50% { transform: translate(0, rem(10)) }
+  }
+
+  &__dscr {
+    font-family: "Raleway - Extra Bold";
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: rem(18);
+  }
+}
+/*-------end--------*/
+
+
+/* Styles of Second screen
+--------------------------*/
+
+.screen--second {
+  display: flex;
+  max-height: 1025px;
+  color: $black;
+
+  @media screen and (max-width: $desktopWidth) {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+}
+
+
+// Video
+
+.video {
+  width: 45.714vw;
+  background: url("../img/second-screen_jumper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right rem(-218) top 0px;
+
+  @media screen and (max-width: $desktopWidth) {
+    position: relative;
+    right: 2.857vw;
+    height: 440px;
+  }
+
+  @media screen and (max-width: $tableWidth) {
+    position: static;
+    min-width: 350px;
+  }
+
+  &::before {
+    position: relative;
+    display: block;
+    width: 45.714vw;
+    min-width: 350px;
+    height: 100%;
+    content: '';
+    @include img-position("../img/second-screen_overlay.png");
+  }
+}
+
+.video-btn {
+  position: relative;
+  left: 16.16vw;
+  bottom: 54.9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: rem(125);
+  height: rem(116);
+
+  @media screen and (max-width: $desktopWidth) {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+	}
+
+  &:hover {
+    .video-btn__dscr {
+      color: $primary;
+    }
+  }
+
+  &__sign {
+    position: relative;
+    left: rem(2);
+    width: rem(76);
+    height: rem(76);
+    transition: all .2s ease-in-out;
+
+    @include img-position("../img/play-btn.png");
+  }
+
+  &__dscr {
+    font-family: Raleway;
+    font-size: rem(15);
+    font-weight: 700;
+    line-height: rem(21);
+    color: $white;
+    transition: all .2s ease-in-out;
+  }
+}
+
+
+// Features second screen
+
+.feat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 12.9vh;
+  padding-bottom: 9.9vh;
+  padding-left: 3.857vw;
+  padding-right: 6.857vw;
+
+  @media screen and (max-width: $desktopWidth) {
+    padding-bottom: 4vh;
+    padding-top: 2.9vh;
+    padding-bottom: 2.9vh;
+    padding-left: 2.857vw;
+    padding-right: 7.857vw;
+  }
+
+  @media screen and (max-width: $tableWidth) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// Text block
+.feat-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 37.755vh;
+
+  @media screen and (max-width: $desktopWidth) {
+    align-items: center;
+    height: auto;
+    margin-bottom: 3%;
+  }
+  
+  &__heading {
+    max-width: rem(532);
+    font-family: "Raleway - Extra Bold";
+    font-size: 6.122vh;
+    font-weight: 400;
+    line-height: 7.125vh;
+
+    @media screen and (max-width: $desktopWidth) {
+      max-width: 100%;
+      margin-bottom: 20px;
+      font-size: 4.5rem;
+      line-height: 5rem;
+      text-align: center;
+    }
+  }
+
+  &__dscr {
+    max-width: rem(480);
+    height: rem(87);
+    font-family: Raleway;
+    font-size: rem(21);
+    font-weight: 400;
+    line-height: rem(34);
+
+    @media screen and (max-width: $desktopWidth) {
+      max-width: 80%;
+      font-size: rem(26);
+      text-align: center;
+    }
+  }
+}
+
+// Boxes
+.feat-box-wrap {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $desktopWidth) {
+    justify-content: center;
+
+  }
+}
+
+.feat-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: rem(256);
+  height: rem(197);
+  padding: rem(29) 1.6vw;
+  background-color: $grey-light;
+  border: 1px solid $grey-light;
+  transition: all .2s ease-in-out;
+
+  @media screen and (max-width: $desktopWidth) {
+		margin: 0 10px;
+	}
+
+  &:hover {
+    border-color: $primary;
+  }
+  
+  &__sign {
+    width: rem(75);
+    height: rem(75);
+  }
+
+  &__sign--world {
+    @include img-position("../img/feat-world.png");
+  }
+
+  &__sign--space {
+    width: rem(77);
+    height: rem(82);
+
+    @include img-position("../img/feat-space.png");
+  }
+
+  &__dscr {
+    text-align: center;
+    font-family: Raleway;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: rem(21);
+  }
+
+  &__dscr--minify {
+    max-width: rem(140);
+  }
+}
+/*-------end--------*/
+
+
+/* Section How it was
+---------------------------*/
+
+.how-it-was {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: rem(61);
+  padding-bottom: rem(97);
+  padding-left: rem(110);
+  padding-right: rem(156);
+
+  &__heading {
+    position: relative;   // Only for 'Pixel perfect'
+    left: 6px;            // Only for 'Pixel perfect'
+    font-family: "Raleway - Extra Bold";
+    font-size: 6.122vh;
+    font-weight: 400;
+    line-height: 7.125vh;
+    margin-bottom: rem(68);
+
+    @media screen and (max-width: $desktopWidth) {
+      position: static;
+      max-width: 100%;
+      font-size: 4.5rem;
+      line-height: 5rem;
+      text-align: center;
+    }
+  }
+}
+
+// Row gallery
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  width: 100%;
+  margin-bottom: rem(55);
+  
+  &--reverse {
+    flex-direction: row-reverse;
+
+    @media screen and (max-width: 650px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+// Photo
+.gallery-img {
+
+  &__photo {
+    margin-bottom: rem(14);
+    width: rem(454);
+    height: rem(316); 
+  }
+
+  &__photo--snow {
+    @include img-position("../img/gallery-snow.png");
+  }
+
+  &__photo--sea {
+    @include img-position("../img/gallery-sea.png");
+  }
+
+  &__dscr {
+    text-align: center;
+    font-family: Raleway;
+    font-size: rem(18);
+    font-weight: 400;
+    line-height: rem(26);
+
+    i {
+      font-family: "Raleway - Extra Bold";
+      font-weight: 700;
+      letter-spacing: rem(0.54);
+    }
+  }
+  
+  // Rotated signs
+  &__numb {
+    font-family: Raleway;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: rem(1.5);
+    color: rgb(179, 179, 179);
+    transform: rotate(270deg) translate(rem(250), rem(-262));
+
+    b {
+      font-family: "Raleway - Extra Bold";
+      font-weight: 700;
+    }
+  }
+
+  &__name {
+    font-family: "Raleway - Extra Bold";
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: rgb(179, 179, 179);
+    transform: rotate(270deg) translate(0, rem(263));
+  }
+}
+
+// Photo button
+.gallery-btn {
+  position: relative;
+  left: rem(414);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(80);
+  height: rem(60);
+  background-color: $white;
+
+  &__left {
+    width: rem(40);
+    height: rem(60);
+    @include img-position("../img/btn-arrow_left.png");
+    background-size: auto;
+    transition: all .2s ease-in-out;
+  }
+  
+  &__right {
+    width: rem(40);
+    height: rem(60);
+    @include img-position("../img/btn-arrow_right.png");
+    background-size: auto;
+    transition: all .2s ease-in-out;
+  }
+
+  &__left:hover,
+  &__right:hover {
+    background-color: $primary;
+  }
+}
+
+// Slogan
+.slogan {
+  margin-top: 9.5%;
+  margin-right: rem(82);
+  margin-left: rem(96);
+  text-align: center;
+  font-family: Raleway;
+  font-size: rem(32);
+  font-weight: 300;
+  line-height: rem(40);
+  letter-spacing: rem(1.6);
+  color: $grey;
+
+  em {
+    color: $primary;
+  }
+}
+
+
+// Footer
+
+.foot-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: rem(380);
+  padding-top: rem(86);
+  padding-left: rem(82);
+  padding-right: rem(157);
+  padding-bottom: rem(47);
+  background-color: $grey-dark;
+  color: $white;
+
+  @media screen and (max-width: $desktopWidth) {
+    height: rem(320);
+    padding-top: rem(37);
+    padding-left: rem(60);
+    padding-right: rem(75);
+  }
+}
+
+.whois {
+  display: flex;
+  justify-content: space-between;
+  padding-left: rem(174);
+  padding-right: rem(141);
+
+  @media screen and (max-width: $desktopWidth) {
+    padding-left: rem(70);
+    padding-right: rem(30);
+  }
+}
+
+.whois-name,
+.whois-time {
+
+  &__heading {
+    padding-bottom: rem(22);
+    font-family: "Raleway - Extra Bold";
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: rem(12);
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  &__dscr {
+    font-family: Raleway;
+    font-size: rem(21);
+    font-weight: 300;
+    line-height: rem(22);
+  }
+}
+
+.task {
+  text-align: center;
+
+  &__header {
+    position: relative;   // Only for 'Pixel perfect'
+    right: 13px;            // Only for 'Pixel perfect'
+    padding-bottom: rem(10);
+    font-family: "Raleway - Extra Bold";
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: rem(16);
+    color: $primary;
+  }
+    
+  &__dscr {
+    padding-bottom: rem(21);
+    font-family: "Raleway - Light";
+    font-size: rem(15);
+    line-height: rem(20);
+    font-weight: 300;
+
+    strong {
+      font-family: "Raleway - Extra Bold";
+      font-weight: 400;
+    }
+  }
+    
+  &__ps {
+    font-family: Raleway;
+    font-size: rem(13);
+    font-weight: 300;
+    line-height: rem(13);
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+}
+/*-------end--------*/
+
+
+
+
+
+/* Styles of Navigation
+------------------------*/
+
+.nav {
+  position: fixed;
+  top: 43.7vh;
+  right: rem(28);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: rem(40);
+  height: rem(41);
+
+  @media screen and (max-width: $smDesktopWidth) {
+    display: none;
+  }
+
+  &__line {
+    width: rem(19);
+    height: 1px;
+    background-color: $white;
+  }
+
+  &__line--active {
+    width: rem(39);
+    height: 2px;
+    background-color: $primary;
+  }
+}
+/*-------end--------*/
+
+
+/* Styles of sidebar
+-----------------------*/
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 5.571vw;
+  height: 100vh;
+  padding-top: rem(48);
+
+  @media screen and (max-width: $tableWidth) {
+    display: none;
+  }
+
+  &--text-color {
+    color: $black;
+  }
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 38px;
+  margin: 0 auto;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &__sign {
+    width: rem(18);
+    height: rem(17);
+    margin: 0 auto;
+
+    @include img-position("../img/logo-menu.png");
+  }
+
+  &__dscr {
+    margin: 0 auto;
+    font-family: "Raleway - Extra Bold";
+    font-size: rem(11);
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }  
+}
+
+.sidebar-social {
+  display: flex;
+  justify-content: space-between;
+  width: 242px;
+  height: 18px;
+  transform: rotate(270deg) translate(134px, -80px);
+  line-height: 18px;
+
+  @media screen and (max-width: $desktopWidth) {
+    transform: rotate(270deg) translate(134px, -97px);
+  }
+}
+
+.sidebar-social-vk,
+.sidebar-social-inst {
+  display: flex;
+  justify-content: space-between;
+  transition: all .2s ease-in-out;
+  
+  &:hover {
+    color: $primary;
+  }
+
+  &__dscr {
+    opacity: 0.4;
+    font-family: Raleway;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+  }
+}
+
+.sidebar-social-vk {
+  width: 110px;
+
+  &__sign {
+    width: 25px;
+    height: 15px;
+
+    @include img-position("../img/logo-vk.png");
+  }
+}
+
+.sidebar-social-inst {
+  width: 100px;
+
+  &__sign {
+    width: 17px;
+    height: 17px;
+
+    @include img-position("../img/logo-inst.png");
+  }
+}
+/*-------end--------*/
