@@ -21,8 +21,6 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
 
 
 
-
-
 $(function(){
     $('.picture').fancybox();  
 });
@@ -32,3 +30,5 @@ $(function(){
     dots: true
   });
 });
+
+
