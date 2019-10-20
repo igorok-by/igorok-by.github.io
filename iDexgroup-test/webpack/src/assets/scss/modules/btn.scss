@@ -1,0 +1,17 @@
+.btn {
+  padding: rem(17) rem(42) rem(16);
+  font-size: rem(14);
+  line-height: rem(12);
+  color: $primary-color;
+  border-radius: rem(2);
+  background-color: $default-color;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &--dark {
+    color: $neutral-placeholder;
+    background-color: $primary-color;
+  }
+}

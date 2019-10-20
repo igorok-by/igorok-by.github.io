@@ -1,0 +1,50 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(14, auto);
+  grid-template-rows: repeat(7, auto);
+  
+  &__title {
+    padding-bottom: 13px;
+    padding-right: 4px;
+    font-size: rem(18);
+    color: $neutral-regular;
+  }
+
+  &__cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    font-size: rem(12);
+    line-height: rem(12);
+    border-bottom: 1px solid $default-bckgr;
+    background-color: $default-color;
+  }
+
+  &__cell--def-bckgr {
+    font-size: rem(10);
+    background-color: $default-bckgr;
+    border: none;
+  }
+
+  &__cell--top-left {
+    grid-area: 1 / 1 / 2 / 8;
+    justify-content: flex-start;
+    padding-top: 17px;
+  }
+
+  &__cell--top-right {
+    grid-area: 1 / 8 / 2 / 15;
+    justify-content: flex-end;
+    padding-top: 17px;
+    padding-right: 8px;
+  }
+
+  &__cell--first {
+    justify-content: flex-start;
+  }
+
+  &__cell--pl2 {
+    padding-left: 20px;
+  }
+}

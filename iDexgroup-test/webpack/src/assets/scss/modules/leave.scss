@@ -1,0 +1,36 @@
+.leave {
+  padding-top: 16px;
+  font-size: rem(14);
+  color: $neutral-primary;
+
+  &__descr {
+    display: flex;
+  }
+
+  &__sign {
+    min-width: 12px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  &__sign--success {
+    background-color: $success-color;
+  }
+
+  &__sign--danger {
+    background-color: $danger-color;
+  }
+
+  &__sign--warning {
+    background-color: $warning-color;
+  }
+
+  &__val {
+
+  }
+
+  &__title {
+    padding-left: 20px;
+    color: $neutral-secondary;
+  }
+}

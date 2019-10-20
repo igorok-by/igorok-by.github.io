@@ -1,0 +1,81 @@
+// Bootstrap
+// @import "~bootstrap/scss/bootstrap";
+
+
+@import "~tooltipster/dist/css/tooltipster.bundle.min.css";
+
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+
+html {
+  line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+		font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 14px;
+  }
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+	font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $default-bckgr;
+}
+
+*, *:before, *:after { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+a { text-decoration: none; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+// Modules
+
+@import "modules/main-wrapper.scss";
+@import "modules/aside.scss";
+@import "modules/article.scss";
+@import "modules/section.scss";
+@import "modules/row.scss";
+@import "modules/grid.scss";
+@import "modules/btn.scss";
+@import "modules/year.scss";
+@import "modules/person.scss";
+@import "modules/chart.scss";
+@import "modules/popup.scss";
+@import "modules/leave.scss";
+@import "modules/tooltipster-theme.scss";

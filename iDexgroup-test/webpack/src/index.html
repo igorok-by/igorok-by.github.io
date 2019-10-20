@@ -1,0 +1,2945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>iDexgroup-test</title>
+</head>
+
+<body>
+  <!-- Set of icons -->
+  <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="icon-close" viewBox="0 0 16 16">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Head-dashboard-1368" transform="translate(-959.000000, -483.000000)" fill="#000000"
+            fill-rule="nonzero">
+            <g id="Group-5" transform="translate(646.000000, 467.000000)">
+              <g id="ic-close" transform="translate(313.000000, 16.000000)">
+                <path
+                  d="M13.3976686,0.0957257143 C13.2700343,-0.0319085714 13.06112,-0.0319085714 12.9334857,0.0957257143 L8.19730286,4.83190857 C8.06966857,4.95954286 7.86075429,4.95954286 7.73312,4.83190857 L2.99702857,0.0957257143 C2.86939429,-0.0319085714 2.66048,-0.0319085714 2.53284571,0.0957257143 L0.0957257143,2.53275429 C-0.0319085714,2.66038857 -0.0319085714,2.86930286 0.0957257143,2.99693714 L4.83190857,7.73312 C4.95954286,7.86075429 4.95954286,8.06966857 4.83190857,8.19730286 L0.0957257143,12.9334857 C-0.0319085714,13.06112 -0.0319085714,13.2700343 0.0957257143,13.3976686 L2.53275429,15.8346971 C2.66038857,15.9623314 2.86930286,15.9623314 2.99693714,15.8346971 L7.73312,11.0985143 C7.86075429,10.97088 8.06966857,10.97088 8.19730286,11.0985143 L12.9333943,15.8346057 C13.0610286,15.96224 13.2699429,15.96224 13.3975771,15.8346057 L15.8346057,13.3975771 C15.96224,13.2699429 15.96224,13.0610286 15.8346057,12.9333943 L11.0985143,8.19730286 C10.97088,8.06966857 10.97088,7.86075429 11.0985143,7.73312 L15.8346057,2.99702857 C15.96224,2.86939429 15.96224,2.66048 15.8346057,2.53284571 L13.3976686,0.0957257143 Z"
+                  id="Path"></path>
+              </g>
+            </g>
+          </g>
+        </g>
+      </symbol>
+      <symbol id="icon-arr-right" viewBox="0 0 7 12">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Head-dashboard-1368" transform="translate(-1043.000000, -273.000000)">
+            <g id="ic-right" transform="translate(1034.000000, 267.000000)">
+              <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+              <path
+                d="M9.29,6.71 C8.9,7.1 8.9,7.73 9.29,8.12 L13.17,12 L9.29,15.88 C8.9,16.27 8.9,16.9 9.29,17.29 C9.68,17.68 10.31,17.68 10.7,17.29 L15.29,12.7 C15.68,12.31 15.68,11.68 15.29,11.29 L10.7,6.7 C10.32,6.32 9.68,6.32 9.29,6.71 Z"
+                id="Path" fill="#000000" fill-rule="nonzero"></path>
+            </g>
+          </g>
+        </g>
+      </symbol>
+      <symbol id="icon-arr-left" viewBox="0 0 7 12">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Head-dashboard-1368" transform="translate(-960.000000, -273.000000)">
+            <g id="ic-left" transform="translate(952.000000, 267.000000)">
+              <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+              <path
+                d="M14.71,6.71 C14.32,6.32 13.69,6.32 13.3,6.71 L8.71,11.3 C8.32,11.69 8.32,12.32 8.71,12.71 L13.3,17.3 C13.69,17.69 14.32,17.69 14.71,17.3 C15.1,16.91 15.1,16.28 14.71,15.89 L10.83,12 L14.71,8.12 C15.1,7.73 15.09,7.09 14.71,6.71 Z"
+                id="Path" fill="#000000" fill-rule="nonzero"></path>
+            </g>
+          </g>
+        </g>
+      </symbol>
+    </defs>
+  </svg><!-- end Set of icons -->
+
+  <!-- main wrapper -->
+  <main class="main-wrapper">
+    <div class="aside aside--dark"></div>
+    <article class="article">
+      <h1 class="article__title">Рабочий стол руководителя</h1>
+      <section class="section section--light">
+        <div class="row row--mb1">
+          <a href="#" id="tool" class="btn btn--dark">Dashboard</a>
+          <a href="#" class="btn">Team line up</a>
+        </div>
+      </section>
+      <section class="section section--light">
+        <div class="grid">
+          <!-- Row 1 -->
+          <div class="grid__cell grid__cell--top-left grid__cell--def-bckgr grid__cell--first grid__cell--pl2">
+            <h3 class="grid__title">График отпусков</h3>
+          </div>
+          <div class="grid__cell grid__cell--top-right grid__cell--def-bckgr">
+            <div class="year">
+              <a href="#" class="year__arr year__arr--left">
+                <svg>
+                  <use xlink:href="#icon-arr-left"></use>
+                </svg>
+              </a>
+              <p class="year__numb">2019</p>
+              <a href="#" class="year__arr year__arr--right">
+                <svg>
+                  <use xlink:href="#icon-arr-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- end Row 1 -->
+
+          <!-- Row 2 -->
+          <p class="grid__cell grid__cell--def-bckgr grid__cell--first grid__cell--pl2">Фамилия, Имя</p>
+          <p class="grid__cell grid__cell--def-bckgr">дней</p>
+          <p class="grid__cell grid__cell--def-bckgr">Янв</p>
+          <p class="grid__cell grid__cell--def-bckgr">Фев</p>
+          <p class="grid__cell grid__cell--def-bckgr">Мар</p>
+          <p class="grid__cell grid__cell--def-bckgr">Апр</p>
+          <p class="grid__cell grid__cell--def-bckgr">Май</p>
+          <p class="grid__cell grid__cell--def-bckgr">Июн</p>
+          <p class="grid__cell grid__cell--def-bckgr">Июл</p>
+          <p class="grid__cell grid__cell--def-bckgr">Авг</p>
+          <p class="grid__cell grid__cell--def-bckgr">Сен</p>
+          <p class="grid__cell grid__cell--def-bckgr">Окт</p>
+          <p class="grid__cell grid__cell--def-bckgr">Ноя</p>
+          <p class="grid__cell grid__cell--def-bckgr">Дек</p>
+          <!-- end Row 2 -->
+
+          <!-- Row 3 -->
+          <div class="grid__cell grid__cell--first">
+            <div class="person">
+              <img src="./assets/img/photo.png" alt="" class="person__img">
+              <p class="person__name">Иван Иванов</p>
+            </div>
+          </div>
+          <div class="grid__cell">
+            <p>14/28</p>
+          </div>
+          <!-- Jan -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+            </div>
+          </div><!-- end Jan -->
+
+          <!-- Feb -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+            </div>
+          </div><!-- end Feb -->
+
+          <!-- Mar -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Mar -->
+
+          <!-- Apr -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-danger"></div>
+                <div class="chart__part chart__part--bckgr-danger"></div>
+                <div class="chart__part chart__part--bckgr-danger"></div>
+                <div class="chart__part chart__part--bckgr-danger"></div>
+                <div class="chart__part chart__part--bckgr-danger"></div>
+                <div class="chart__part chart__part--bckgr-danger"></div>
+                <div class="chart__part chart__part--bckgr-danger"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-danger"></div>
+                <div class="chart__part chart__part--bckgr-danger"></div>
+              </div>
+            </div>
+          </div><!-- end Apr -->
+
+          <!-- May -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+              </div>
+            </div>
+          </div><!-- end May -->
+
+          <!-- Jun -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Jun -->
+
+          <!-- Jul -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Jul -->
+
+          <!-- Aug -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Aug -->
+
+          <!-- Sep -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Sep -->
+
+          <!-- Oct -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Oct -->
+
+          <!-- Nov -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Nov -->
+
+          <!-- Dec -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Dec -->
+          <!-- end Row 3 -->
+
+          <!-- Row 4 -->
+          <div class="grid__cell grid__cell--first">
+            <div class="person">
+              <img src="./assets/img/photo-2.png" alt="" class="person__img">
+              <p class="person__name">Катерина Иванова</p>
+            </div>
+          </div>
+          <div class="grid__cell">
+            <p>14/28</p>
+          </div>
+          <!-- Jan -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+            </div>
+          </div><!-- end Jan -->
+
+          <!-- Feb -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+            </div>
+          </div><!-- end Feb -->
+
+          <!-- Mar -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Mar -->
+
+          <!-- Apr -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Apr -->
+
+          <!-- May -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end May -->
+
+          <!-- Jun -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Jun -->
+
+          <!-- Jul -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Jul -->
+
+          <!-- Aug -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Aug -->
+
+          <!-- Sep -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Sep -->
+
+          <!-- Oct -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Oct -->
+
+          <!-- Nov -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Nov -->
+
+          <!-- Dec -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Dec -->
+          <!-- end Row 4 -->
+
+          <!-- Row 5 -->
+          <div class="grid__cell grid__cell--first">
+            <div class="person">
+              <img src="./assets/img/photo.png" alt="" class="person__img">
+              <p class="person__name">Иван Иванов</p>
+            </div>
+          </div>
+          <div class="grid__cell">
+            <p>14/28</p>
+          </div>
+          <!-- Jan -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+            </div>
+          </div><!-- end Jan -->
+
+          <!-- Feb -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+            </div>
+          </div><!-- end Feb -->
+
+          <!-- Mar -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+              </div>
+            </div>
+          </div><!-- end Mar -->
+
+          <!-- Apr -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Apr -->
+
+          <!-- May -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+              </div>
+            </div>
+          </div><!-- end May -->
+
+          <!-- Jun -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+              </div>
+            </div>
+          </div><!-- end Jun -->
+
+          <!-- Jul -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Jul -->
+
+          <!-- Aug -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Aug -->
+
+          <!-- Sep -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-danger"></div>
+                <div class="chart__part chart__part--bckgr-danger"></div>
+                <div class="chart__part chart__part--bckgr-danger"></div>
+                <div class="chart__part chart__part--bckgr-danger"></div>
+                <div class="chart__part chart__part--bckgr-danger"></div>
+                <div class="chart__part chart__part--bckgr-danger"></div>
+                <div class="chart__part chart__part--bckgr-danger"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-danger"></div>
+                <div class="chart__part chart__part--bckgr-danger"></div>
+              </div>
+            </div>
+          </div><!-- end Sep -->
+
+          <!-- Oct -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Oct -->
+
+          <!-- Nov -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Nov -->
+
+          <!-- Dec -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Dec -->
+          <!-- end Row 5 -->
+
+          <!-- Row 6 -->
+          <div class="grid__cell grid__cell--first">
+            <div class="person">
+              <img src="./assets/img/photo.png" alt="" class="person__img">
+              <p class="person__name">Иван Иванов</p>
+            </div>
+          </div>
+          <div class="grid__cell">
+            <p>14/28</p>
+          </div>
+          <!-- Jan -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+            </div>
+          </div><!-- end Jan -->
+
+          <!-- Feb -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+            </div>
+          </div><!-- end Feb -->
+
+          <!-- Mar -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-warning"></div>
+                <div class="chart__part chart__part--bckgr-warning"></div>
+                <div class="chart__part chart__part--bckgr-warning"></div>
+                <div class="chart__part chart__part--bckgr-warning"></div>
+                <div class="chart__part chart__part--bckgr-warning"></div>
+                <div class="chart__part chart__part--bckgr-warning"></div>
+                <div class="chart__part chart__part--bckgr-warning"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Mar -->
+
+          <!-- Apr -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Apr -->
+
+          <!-- May -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end May -->
+
+          <!-- Jun -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Jun -->
+
+          <!-- Jul -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Jul -->
+
+          <!-- Aug -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Aug -->
+
+          <!-- Sep -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Sep -->
+
+          <!-- Oct -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Oct -->
+
+          <!-- Nov -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Nov -->
+
+          <!-- Dec -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Dec -->
+          <!-- end Row 6 -->
+
+          <!-- Row 7 -->
+          <div class="grid__cell grid__cell--first">
+            <div class="person">
+              <img src="./assets/img/photo.png" alt="" class="person__img">
+              <p class="person__name">Иван Иванов</p>
+            </div>
+          </div>
+          <div class="grid__cell">
+            <p>14/28</p>
+          </div>
+          <!-- Jan -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+            </div>
+          </div><!-- end Jan -->
+
+          <!-- Feb -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+            </div>
+          </div><!-- end Feb -->
+
+          <!-- Mar -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+                <div class="chart__part"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Mar -->
+
+          <!-- Apr -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-danger"></div>
+                <div class="chart__part chart__part--bckgr-danger"></div>
+              </div>
+            </div>
+          </div><!-- end Apr -->
+
+          <!-- May -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+                <div class="chart__part chart__part--bckgr-success"></div>
+              </div>
+            </div>
+          </div><!-- end May -->
+
+          <!-- Jun -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Jun -->
+
+          <!-- Jul -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Jul -->
+
+          <!-- Aug -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Aug -->
+
+          <!-- Sep -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Sep -->
+
+          <!-- Oct -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Oct -->
+
+          <!-- Nov -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Nov -->
+
+          <!-- Dec -->
+          <div class="grid__cell">
+            <div class="chart">
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+              <div class="chart__col">
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+                <div class="chart__part chart__part--bckgr-prime"></div>
+              </div>
+            </div>
+          </div><!-- end Dec -->
+          <!-- end Row 7 -->
+        </div>
+      </section>
+    </article>
+
+    <!-- Popups -->
+    <div class="popup" id="popupVacation">
+      <div class="person person--in-popup">
+        <img src="./assets/img/photo-2.png" alt="" class="person__img person__img--big tooltip">
+        <p class="person__name person__name--bold">Катерина Иванова</p>
+      </div>
+      <div class="leave">
+        <div class="leave__descr">
+          <div class="leave__sign leave__sign--success"></div>
+          <p class="leave__val">09.08.2019 — 23.08.2019 (14д.)</p>
+        </div>
+        <p class="leave__title">отпуск</p>
+      </div>
+    </div>
+    
+    <div class="popup" id="popupAbsent">
+      <div class="person person--in-popup">
+        <img src="./assets/img/photo.png" alt="" class="person__img person__img--big tooltip">
+        <p class="person__name person__name--bold">Иван Иванов</p>
+      </div>
+      <div class="leave">
+        <div class="leave__descr">
+          <div class="leave__sign leave__sign--danger"></div>
+          <p class="leave__val">09.08.2019 — 23.08.2019 (14д.)</p>
+        </div>
+        <p class="leave__title">прогул</p>
+      </div>
+    </div>
+
+    <div class="popup" id="popupSick">
+      <div class="person person--in-popup">
+        <img src="./assets/img/photo.png" alt="" class="person__img person__img--big tooltip">
+        <p class="person__name person__name--bold">Иван Иванов</p>
+      </div>
+      <div class="leave">
+        <div class="leave__descr">
+          <div class="leave__sign leave__sign--warning"></div>
+          <p class="leave__val">09.08.2019 — 23.08.2019 (14д.)</p>
+        </div>
+        <p class="leave__title">больничный</p>
+      </div>
+    </div><!-- end Popups -->
+  </main><!-- end main wrapper -->
+</body>
+
+</html>

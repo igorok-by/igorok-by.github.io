@@ -1,0 +1,43 @@
+.chart {
+  display: flex;
+  justify-content: center;
+  margin-left: -1px;
+  margin-right: -1px;
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  &__col:first-child {
+    justify-content: flex-end;
+  }
+
+  &__part {
+    width: 100%;
+    height: 2.6px;
+    margin-top: -0.15px;
+    margin-bottom: -0.15px;
+    background-color: $success-bckgr;
+  }
+
+  &__part--bckgr-prime {
+    background-color: $primary-bckgr;
+  }
+
+  &__part--bckgr-danger {
+    background-color: $danger-color;
+  }
+
+  &__part--bckgr-success {
+    background-color: $success-color;
+  }
+
+  &__part--bckgr-warning {
+    background-color: $warning-color;
+  }
+}

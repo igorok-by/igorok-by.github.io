@@ -1,0 +1,14 @@
+.article {
+  width: 100%;
+  max-width: 978px;
+  min-height: 575px;
+  padding: 20px;
+  background-color: $default-color;
+
+  &__title {
+    padding: rem(10) 0 rem(20) 16px;
+    font-size: rem(32);
+    line-height: rem(40);
+    color: $neutral-primary;
+  }
+}

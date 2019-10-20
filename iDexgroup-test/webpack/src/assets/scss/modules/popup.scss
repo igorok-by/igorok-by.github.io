@@ -1,0 +1,11 @@
+.popup {
+  display: none;
+  position: absolute;
+  top: 27px;
+  left: 10px;
+  min-width: 345px;
+  padding: 16px 16px 22px;
+  background: $default-color;
+  box-shadow: 0 0 4px 0 rgba(107, 107, 107, .5);
+  border-radius: 4px;
+}
