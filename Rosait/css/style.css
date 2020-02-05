@@ -44,13 +44,15 @@ body {
 /* carousel-item */
 .promo .carousel-item > img {
   height: 675px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   font-family: 'object-fit: cover;';
 }
 
 @media (max-width: 1199.98px) {
   .promo .carousel-item > img {
-    object-position: 36%;
+    -o-object-position: 36%;
+       object-position: 36%;
     font-family: 'object-fit: cover; object-position: 36%;';
   }
 }
@@ -133,7 +135,8 @@ body {
   height: 85px;
   background-color: rgba(0, 0, 0, 0.1);
   opacity: 1;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .promo .carousel-control-prev-icon,
